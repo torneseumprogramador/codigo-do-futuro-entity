@@ -1,7 +1,10 @@
 ### comandos executados
 ```shell
 # migrations
-dotnet add package Microsoft.EntityFrameworkCore.Tools --version 7.0.1
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Pomelo.EntityFrameworkCore.MySql
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add MinhaMigracao
 dotnet ef database update
